@@ -12,3 +12,8 @@ names.append("Draco")
 names.sort()
 print(names)
 
+print("hello world \n")
+
+# Taking input with the key word input
+name=input("name:")
+age=int(input("Enter age:"))

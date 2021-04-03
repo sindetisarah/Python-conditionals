@@ -17,3 +17,20 @@ print(numbers)
 
 # Finding the length of the above numbers use  len()
 print(f"The length of the above numbers is {len(numbers)}")
+
+
+
+
+
+
+List1 = [12, 4, 56, 17, 8, 99]
+print(max(List1),"\n")
+
+def Mean(list2): 
+    return sum(list2) / len(list2) 
+list2 = [12, 4, 56, 17, 8, 99]
+mean = Mean(list2)
+print("Mean of list2 =", round(mean,2),"\n")
+
+
+

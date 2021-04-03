@@ -18,3 +18,7 @@ print(new_num)
 for i in range(10):
     print(i)
     
+Var = ['A for Apple','B for Boy','C for Cat','D for Dog','E for Elephant','F for Fish','G for Girl','H for Hen','I for Ice cream','J for Jug','K for Kettle','L for Lion','M for Man','N for Nurse','O for Ostrich','P for Puppy','Q for Queen','R for Rabbit','S for Ship','T for Tree','U for Umbrella','V for Van','W for Woman','X for X-mass tree','Y for Yatch','Z for Zebra']
+
+for item in Var:
+    print(item)
