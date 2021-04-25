@@ -14,6 +14,6 @@ print(names)
 
 print("hello world \n")
 
-# Taking input with the key word input
+# Taking input with the key  inbuilt function input
 name=input("name:")
 age=int(input("Enter age:"))
