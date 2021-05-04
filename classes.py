@@ -18,17 +18,18 @@ print(northpole.x)
 print(northpole.y)
 print(northpole)
 
-# define class flight
+define class flight
 class Flight():
+    # init always creates a new flight in this a case
     def __init__(self,capacity):
         self.capacity=capacity
-        self.passenger=[]
+        self.passengers=[]
 
 
     def add_passenger(self,name):
         if not self.open_seats():
             return False
-        self.passenger.append(name)
+        self.passengers.append(name)
         return True
 
     def open_seats(self):
@@ -39,10 +40,37 @@ wilson=Flight(4)
 
 people=["Sarah","Juliet","Hermonie","Shadya","Sheilla","Wendy"]
 for person in people:
-    space=wilson.add_passenger(sarah)
+    space=wilson.add_passenger(person)
     if space:
         print(f"Addded {person} to Board the flight")
     else:
-        print(f"All seats have been booked for{person}")
+        print(f"All seats have been booked {person}")
+
+class ZoomCall():
+    def __init__ (self, max_attendie):
+        self.max_attendie = max_attendie
+        self.attendants=[]
+
+    def add_attendant(self,student):
+        self.attendants.append(student)
+       
+        if self.space_available()==0:
+            return False
+        self.attendants.append(student)
+        return True
+
+    def space_available(self):
+        return self.max_attendie-len(self.attendants)
+
+# creating an instance of an Object
+python_class=ZoomCall(5)
+waiting_room=["Sarah","Sindet","Amina","Shadya","Juliet","Sharon","Veronicah","Nashipai"]
+for student in waiting_room:
+    join=python_class.add_attendant(student)
+    if join:
+        print(f"{student} has joined the meeting")
+    else:
+        print(f"We are sorry timeout{student}")
+
 
 
