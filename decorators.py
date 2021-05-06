@@ -24,3 +24,16 @@ hello()
 def welcome():
     print("Welcome to YWCA")
 welcome()
+
+# creating another decorator
+def python(f):
+    def wrapper():
+        print("Hello PythonWorld")
+        f()
+        print("Python is Great")
+    return wrapper
+
+@python
+def learn():
+    print(" We are learning decorators")
+learn()
