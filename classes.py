@@ -69,6 +69,8 @@ class ZoomCall():
     def space_available(self):
         return self.max_attendie-len(self.attendants)
 
+    
+
 # creating an instance of an Object
 python_class=ZoomCall(5)
 waiting_room=["Sarah","Sindet","Amina","Shadya","Juliet","Sharon","Veronicah","Nashipai"]
@@ -110,12 +112,22 @@ class Employee2():
         self.name=name
         self.email=email
         self.pay=pay
+
+    """
+    creating a function to sort out the employees salaries
+    """
+    def sort_salary(self):
+        return self.pay>60,000
 """
 instance of an object
 """
 employee2=Employee2("sarahsindet","sarahsindet@gmail.com",50000)
-print(employee2.name)
-print(employee2.email)
+employee_accounts=Employee2("JUliet","julietgisemba@gmail.com",60000)
+employee_engineer=Employee("Barre","alikiyobarre@gmail.com",200000)
+employee_trainer=Employee2("Robert","robert#gmail.com",80000)
+
+
+
 
 
 
