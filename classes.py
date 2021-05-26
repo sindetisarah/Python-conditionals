@@ -1,22 +1,5 @@
 # define class point
-class Point():
-    """
-    init is a methodal function/constructor
 
-    """
-    def __init__(self, input1,input2):
-        """
-        self rep the object in question
-        storing the inputvalues in the point "class" in the properties we call x and y
-        """
-        self.x=input1 
-        self.y=input2
-
-    # instance of an object
-northpole=Point(20,50)
-print(northpole.x)
-print(northpole.y)
-print(northpole)
 """
 define class flight
 """
@@ -125,6 +108,25 @@ employee2=Employee2("sarahsindet","sarahsindet@gmail.com",50000)
 employee_accounts=Employee2("JUliet","julietgisemba@gmail.com",60000)
 employee_engineer=Employee("Barre","alikiyobarre@gmail.com",200000)
 employee_trainer=Employee2("Robert","robert#gmail.com",80000)
+
+class Point():
+    """
+    init is a methodal function/constructor
+
+    """
+    def __init__(self, input1,input2):
+        """
+        self rep the object in question
+        storing the inputvalues in the point "class" in the properties we call x and y
+        """
+        self.x=input1 
+        self.y=input2
+
+    # instance of an object
+northpole=Point(20,50)
+print(northpole.x)
+print(northpole.y)
+print(northpole)
 
 
 
